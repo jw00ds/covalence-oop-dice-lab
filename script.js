@@ -26,15 +26,11 @@ generateDieButton.addEventListener("click", function () {
     new Die();
 });
 rollButton.addEventListener("click", function () {
-    diceArray.forEach((die) => {
-        die.roll();
-    });
+    diceArray.forEach(die => die.roll());
 });
 sumButton.addEventListener("click", function () {
     let sum = 0;
-    diceArray.forEach((die) => {
-        sum += die.value;
-    });
+    diceArray.forEach(die => sum += die.value);
     alert(sum);
 });
 
